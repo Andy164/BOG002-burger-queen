@@ -1,22 +1,22 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ButtomComponent } from './buttom.component';
+import { ButtonComponent } from './button.component';
 
 const mockText= "Ordenar";
 const mockBtnType= "btn-primary";
 describe('ButtomComponent', () => {
-  let component: ButtomComponent;
-  let fixture: ComponentFixture<ButtomComponent>;
+  let component: ButtonComponent;
+  let fixture: ComponentFixture<ButtonComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ButtomComponent ]
+      declarations: [ ButtonComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ButtomComponent);
+    fixture = TestBed.createComponent(ButtonComponent);
     component = fixture.componentInstance;
     component.btnType=mockBtnType;
     component.text=mockText;

@@ -8,7 +8,7 @@
         #client
         [value]="valueClient | capitalize"
         [readonly]="valueClient"
-        [ngClass]="{ 'input-text': valueClient, 'input-red': placeholderInput}"
+        [ngClass]="{ 'input-text': valueClient, 'input-red': placeholderInput }"
         [placeholder]="placeholderInput"
       />
     </label>
@@ -62,8 +62,8 @@
     </div>
   </div>
   <div class="container-btn" *ngIf="totalOrder">
-    <app-buttom btnType="btn-secondary" text="Cancelar" routerLink="/waiter"></app-buttom>
-    <app-buttom btnType="btn-primary" [text]="textBtn" (click)="onClickOrder()"></app-buttom>
+    <app-button btnType="btn-secondary" text="Cancelar" routerLink="/waiter"></app-button>
+    <app-button btnType="btn-primary" [text]="textBtn" (click)="onClickOrder()"></app-button>
   </div>
   <div class="popup-order" [ngClass]="{ show: popup }">
     <div class="item-popup" *ngFor="let item of itemsPopup; index as i">

@@ -11,11 +11,6 @@ const routes: Routes = [
    
     children: [
       {
-        path: '',
-        redirectTo: 'tables',
-        pathMatch: 'full',
-      },
-      {
         path: 'tables',
         component: TablesComponent,
       },
@@ -23,8 +18,11 @@ const routes: Routes = [
         path: 'order/:id',
         component: OrderComponent,
       },
-      
-      
+      {
+        path: '',
+        redirectTo: 'tables',
+        pathMatch: 'full',
+      },
     ],
   },
 ];

@@ -4,7 +4,6 @@ import { FirestoreService } from 'src/app/services/firestore/firestore.service';
 import { OrderData } from 'src/app/shared/models/order-bd.model';
 
 @Component({
-  selector: 'app-tables',
   templateUrl: './tables.component.html',
   styleUrls: ['./tables.component.css'],
 })

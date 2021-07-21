@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-buttom',
+  selector: 'app-button',
   template: `<button [class]="btnType">{{ text }}</button>`,
-  styleUrls: ['./buttom.component.css'],
+  styleUrls: ['./button.component.css'],
 })
-export class ButtomComponent {
+export class ButtonComponent {
   @Input() text: string;
   @Input() btnType: string;
   constructor() {

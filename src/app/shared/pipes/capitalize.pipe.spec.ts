@@ -1,9 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { Capitalize } from './capitalize.pipe';
+import { CapitalizePipe } from './capitalize.pipe';
 
 describe('capitalize', () => {
   it('should capitalize the first letter in every word', () => {
-    const pipe = new Capitalize();
+    const pipe = new CapitalizePipe();
     expect(pipe.transform('ana maria')).toBe('Ana Maria')
   });
 });

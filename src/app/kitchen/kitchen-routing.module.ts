@@ -11,18 +11,18 @@ const routes: Routes = [
 
     children: [
       {
-        path: '',
-        redirectTo: 'orders',
-        pathMatch: 'full',
-        //full: Evita un loop infinito al cargar una ruta vacia
-      },
-      {
         path: 'orders',
         component: OrdersComponent,
       },
       {
         path: 'records',
         component: RecordsComponent,
+      },
+      {
+        path: '',
+        redirectTo: 'orders',
+        pathMatch: 'full',
+        //full: Evita un loop infinito al cargar una ruta vacia
       },
     ],
   },

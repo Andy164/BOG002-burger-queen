@@ -6,20 +6,23 @@ export interface OrderBd {
   'status-item'?: boolean;
 }
 
-export enum StatusOrder { //StatusOrder[0] StatusOrder['NUEVO'] colecciones de constantes
-  NUEVO = 0,
-  ENVIADO_COCINA = 1,
-  EN_PREPARACION = 2,
-}
+// StatusOrder[1] StatusOrder['ENVIADO_COCINA'] colecciones de constantes
+// export enum StatusOrder {
+//   ENVIADO_COCINA = 1,
+//   EN_PREPARACION = 2,
+//   ENTREGAR = 3,
+//   SERVIDO = 4
+// }
+
 export interface OrderData {
   client: string;
+  'date-hour': number;
+  'lead-time': string;
   products: OrderBd[];
   status: number;
+  table: string;
   'total-order': number;
   waiter: string;
-  'date-hour': number;
-  table: string;
-  'lead-time': string;
 }
 
 export interface OrderDataEdit {

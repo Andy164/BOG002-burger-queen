@@ -3,7 +3,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({
   name: 'capitalize',
 })
-export class Capitalize implements PipeTransform {
+export class CapitalizePipe implements PipeTransform {
   transform(value: string) {
     if (value) {
       const arrNames = value.split(' ');

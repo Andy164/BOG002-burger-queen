@@ -5,12 +5,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   {
-    path: '',
-    redirectTo: '/home',
-    pathMatch: 'full',
-  },
-
-  {
     path: 'home',
     component: HomeComponent,
   },
@@ -24,6 +18,13 @@ const routes: Routes = [
     path: 'waiter',
     loadChildren: () => import('../app/waiter/waiter.module').then((m) => m.WaiterModule),
   },
+
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full',
+  },
+  
   {
     path: '**',
     component: NotFoundComponent,

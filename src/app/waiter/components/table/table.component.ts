@@ -75,6 +75,4 @@ export class TableComponent implements OnInit {
     this.firestore.createOrder(this.dataOrder);
     this.firestore.setOrderActive(this.idTable.toString(), {});
   }
-
-  
 }

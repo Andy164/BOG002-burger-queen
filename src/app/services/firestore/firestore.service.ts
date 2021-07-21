@@ -24,7 +24,7 @@ export class FirestoreService {
 
   // traer todos las ordenes
   public getAllOrder(){
-    return this.firestore.collection('orders').valueChanges();
+    return this.firestore.collection('orders', ref => ref.orderBy('date-hour', 'desc')).valueChanges();
   }
 
 
