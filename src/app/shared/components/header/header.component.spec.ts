@@ -19,7 +19,7 @@ describe('HeaderComponent', () => {
 
     component = fixture.componentInstance;
     component.pathCurrent = 'kitchen'; 
-    component.isWaiter = component.pathCurrent.includes('waiter') || component.pathCurrent.includes('kitchen');
+    component.isNotHome = component.pathCurrent.includes('waiter') || component.pathCurrent.includes('kitchen');
     fixture.detectChanges();
   });
 
@@ -36,6 +36,6 @@ describe('HeaderComponent', () => {
   });
   
   it('should assign true when pathCurrent is waiter or kitchen', () => {
-    expect(component.isWaiter).toBeTrue();
+    expect(component.isNotHome).toBeTrue();
   })
 });

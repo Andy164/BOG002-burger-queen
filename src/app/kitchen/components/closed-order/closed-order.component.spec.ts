@@ -33,7 +33,7 @@ const mockOrdersClosed = {
   'lead-time': '0 hora 1 minutos ',
 };
 
-fdescribe('ClosedOrderComponent', () => {
+describe('ClosedOrderComponent', () => {
   let component: ClosedOrderComponent;
   let fixture: ComponentFixture<ClosedOrderComponent>; 
 
